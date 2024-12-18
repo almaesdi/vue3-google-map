@@ -313,6 +313,8 @@ export default defineComponent({
 
       ready.value = true;
 
+      console.log("Estamos Ready")
+
       const otherPropsAsRefs = (Object.keys(props) as (keyof typeof props)[])
         .filter(
           (key) =>
